@@ -1,0 +1,126 @@
+/* estilos.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #223E99;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+} 
+/* Barra superior */
+.barra-top {
+  background-color: #0D9FE1;
+  padding: 15px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #FFD700; /* dorado al pasar el mouse */
+}
+
+.boton-cotiza {
+  background-color: white;
+  color: #0D9FE1;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+/* Contenedor del botón + flecha */
+.contenedor-cotiza {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Botón */
+.boton-cotiza {
+  background-color: white;
+  color: #0D9FE1;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Contenedor del botón + flecha */
+.contenedor-cotiza {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Botón */
+.boton-cotiza {
+  background-color: white;
+  color: #0D9FE1;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Flecha con efecto destellante */
+.flecha-destello {
+  font-size: 24px;
+  animation: destello 1.5s infinite;
+}
+
+/* Animación tipo parpadeo */
+@keyframes destello {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(1.2); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.tarjeta-agente {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E1500D;
+  border-radius: 12px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+/* Info del agente a la izquierda */
+.info-agente h2 {
+  margin: 0;
+  font-size: 22px;
+  color: white;
+}
+
+.info-agente p {
+  margin-top: 5px;
+  font-size: 16px;
+  color: white;
+}
+
+/* Logo al centro */
+.logo-agente img {
+  height: 80px;
+}
+
+/* Foto circular a la derecha */
+.foto-agente img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #0D9FE1;
+}
